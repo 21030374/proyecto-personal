@@ -1,0 +1,10 @@
+GET
+Invoke-WebRequest -Uri "http://127.0.0.1:5000/friend" -Method GET
+GET ONE
+Invoke-WebRequest -Uri "http://127.0.0.1:5000/friend/1" -Method GET
+POST
+Invoke-WebRequest -Uri "http://127.0.0.1:5000/friend" -Method POST -ContentType "application/json" -Body '{"name_friend":"Abraham","family_name_friend":"Silva Mendez","info_friend":"Lower nobility"}'
+PUT
+Invoke-WebRequest -Uri "http://127.0.0.1:5000/friend/1" -Method PUT -ContentType "application/json" -Body '{"name_friend":"Jose Angel","family_name_friend":"Herrera Morales","info_friend":"Even lower nobility"}'
+DELETE
+Invoke-WebRequest -Uri "http://127.0.0.1:5000/friend/1" -Method DELETE
